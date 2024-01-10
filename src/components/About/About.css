@@ -1,0 +1,254 @@
+.about_top {
+  /* height: 619px; */
+  background-image: url("../../assets/about_us_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+  text-align: center;
+  position: relative;
+}
+
+.about_top .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about_top .about_us_logo {
+  width: 220px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.about_top img {
+  width: 100%;
+  /* height: 193.8px; */
+}
+
+.about_top .desc {
+  font-size: 2em;
+  width: 50%;
+  color: #000;
+  text-align: center;
+}
+
+.about_top .btn {
+  padding: 5px 40px;
+  background-color: #292929;
+  border: 2px solid gold;
+  border-radius: 0;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about_top .btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.about_wrapper .bottom-svg-border {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.about_wrapper .top-svg-border {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.about_wrapper svg {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.about_center {
+  background-image: url("../../assets/about-us-back-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  position: relative;
+}
+
+.about_center .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.about_center .details p {
+  font-size: 1.3em;
+  color: white;
+}
+
+.about_center .details .title {
+  color: gold;
+  text-transform: uppercase;
+  font-size: 3.8em;
+  font-weight: 600;
+}
+
+.about_center .details .subtitle {
+  color: #9f9f9f;
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 10px !important;
+}
+
+.about_center .details button {
+  padding: 5px 40px;
+  background-color: #292929;
+  border: 2px solid gold;
+  border-radius: 0;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.about_center .details button:hover {
+  background-color: #000;
+}
+
+.about_center .banner {
+  height: 400px;
+  background-image: url("../../assets/about-us-banner-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about_center .banner.banner_2 {
+  background-image: url("../../assets/about-us-banner-2.jpg");
+}
+
+.about_bottom {
+  height: 372px;
+  background-image: url("../../assets/order_reserve_back.jpg");
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_bottom .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_bottom h2 {
+  color: gold;
+  text-transform: uppercase;
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+.about_bottom h4 {
+  color: #000;
+  font-size: 2em;
+}
+
+.about_bottom p {
+  color: #000;
+  font-size: 1.3em;
+  margin: 20px 0 !important;
+}
+
+.about_bottom button {
+  padding: 5px 40px;
+  background-color: #292929;
+  border: 2px solid gold;
+  border-radius: 0;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.about_bottom button:hover {
+  background-color: #000;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media screen and (max-width: 1024px) {
+  .about_top img {
+    width: 115.8px;
+    height: 115.8px;
+  }
+
+  .about_top .desc {
+    font-size: 1.2em;
+    width: 90%;
+    color: #000;
+    text-align: center;
+  }
+
+  .about_center .details p {
+    font-size: 1.1em;
+  }
+
+  .about_center .details .title {
+    font-size: 2.6em;
+  }
+
+  .about_center .details .subtitle {
+    font-size: 1.2em;
+  }
+
+  .about_center .details button {
+    margin-top: 26px;
+  }
+
+  .about_bottom {
+    height: auto;
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .about_bottom .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about_bottom h2 {
+    font-size: 2.6em;
+  }
+
+  .about_bottom h4 {
+    font-size: 1.2em;
+  }
+
+  .about_bottom p {
+    font-size: 1.1em;
+  }
+}

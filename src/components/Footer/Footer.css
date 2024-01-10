@@ -1,0 +1,58 @@
+footer {
+  background-color: #000;
+  padding: 80px 0;
+  border-bottom: 2px solid gold;
+  overflow: hidden;
+}
+
+footer .content h2 {
+  color: #9f9f9f;
+  text-transform: uppercase;
+  margin-bottom: 1em !important;
+}
+
+footer .content p {
+  color: white;
+  font-size: 1.2em;
+  font-family: "Libre Baskerville", serif;
+}
+
+footer .content a {
+  color: white;
+  font-size: 1.2em;
+  font-family: "Libre Baskerville", serif;
+}
+
+footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+footer .socials a {
+  color: white;
+  font-size: 22px;
+  padding: 2px 10px;
+}
+
+footer .socials a:hover {
+  background-color: gold;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media screen and (max-width: 767px) {
+  footer .content {
+    text-align: center;
+  }
+
+  footer .socials {
+    justify-content: center;
+  }
+
+  footer .content a {
+    color: white;
+    font-size: 1.1em;
+    font-family: "Libre Baskerville", serif;
+  }
+}

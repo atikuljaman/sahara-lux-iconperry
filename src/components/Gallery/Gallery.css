@@ -1,0 +1,417 @@
+.gallery {
+  position: relative;
+  height: 1522px;
+  background-color: #000;
+}
+
+.gallery .image {
+  /* width: 20%; */
+  width: 380.59px;
+  height: 380.59px;
+  overflow: hidden;
+}
+
+.gallery .image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+
+.gallery .image:hover::after {
+  background: rgba(0, 0, 0, 0);
+}
+
+.gallery .image:nth-child(1) {
+  width: 40%;
+  height: 760px;
+  position: absolute;
+  left: 0%;
+  top: 0px;
+}
+
+.gallery .image:nth-child(2) {
+  position: absolute;
+  left: 39.9895%;
+  top: 0px;
+}
+
+.gallery .image:nth-child(3) {
+  position: absolute;
+  left: 59.958%;
+  top: 0px;
+}
+
+.gallery .image:nth-child(4) {
+  position: absolute;
+  left: 79.979%;
+  top: 0px;
+}
+
+.gallery .image:nth-child(5) {
+  position: absolute;
+  left: 39.9895%;
+  top: 380px;
+}
+
+.gallery .image:nth-child(6) {
+  position: absolute;
+  left: 59.958%;
+  top: 380px;
+}
+
+.gallery .image:nth-child(7) {
+  position: absolute;
+  left: 79.979%;
+  top: 380px;
+}
+
+.gallery .image:nth-child(8) {
+  width: 40%;
+  height: 760px;
+  position: absolute;
+  left: 0%;
+  top: 760px;
+}
+
+.gallery .image:nth-child(9) {
+  position: absolute;
+  left: 39.9895%;
+  top: 760px;
+}
+
+.gallery .image:nth-child(10) {
+  position: absolute;
+  left: 59.958%;
+  top: 760px;
+}
+
+.gallery .image:nth-child(11) {
+  position: absolute;
+  left: 79.979%;
+  top: 760px;
+}
+
+.gallery .image:nth-child(12) {
+  position: absolute;
+  left: 39.9895%;
+  top: 1140px;
+}
+
+.gallery .image:nth-child(13) {
+  position: absolute;
+  left: 59.958%;
+  top: 1140px;
+}
+
+.gallery .image:nth-child(14) {
+  position: absolute;
+  left: 79.979%;
+  top: 1140px;
+}
+
+.gallery .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery .image:hover img {
+  transform: scale(1.1);
+}
+
+/* Additional styling for the modal */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  position: relative;
+  z-index: 21;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content {
+  transform: translate(-50%, -50%) !important;
+  top: 50% !important;
+  left: 50% !important;
+  position: absolute;
+  border: none;
+  background: none;
+  width: 40%;
+  height: fit-content !important;
+  padding: 15px !important;
+  overflow: visible !important;
+  z-index: 22;
+}
+
+.ReactModal__Content img {
+  width: 100%;
+}
+
+.ReactModal__Content .prev_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #000000b6;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translate(-50%, 0);
+}
+
+.ReactModal__Content .next_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(-50%, 0);
+}
+
+.ReactModal__Content .close_btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  z-index: 20;
+}
+
+.ReactModal__Content:hover .prev_btn,
+.ReactModal__Content:hover .next_btn {
+  display: flex;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media screen and (max-width: 767px) {
+  .gallery {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery .image {
+    width: 100%;
+    height: 207px;
+  }
+
+  .gallery .image:nth-child(1) {
+    width: 100%;
+    height: auto;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(2) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(3) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(4) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(5) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(6) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(7) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(8) {
+    left: 0;
+    top: 0;
+    position: inherit;
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery .image:nth-child(9) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(10) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(11) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(12) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(13) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .gallery .image:nth-child(14) {
+    left: 0;
+    top: 0;
+    position: inherit;
+  }
+
+  .ReactModal__Content {
+    width: 90%;
+  }
+
+  .ReactModal__Content .prev_btn,
+  .ReactModal__Content .next_btn {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    height: 615px;
+  }
+
+  .gallery .image {
+    width: 20%;
+    height: 154px;
+  }
+
+  .gallery .image:nth-child(1) {
+    width: 40%;
+    height: 307.2px;
+  }
+
+  .gallery .image:nth-child(2) {
+    left: 39.974%;
+    top: 0px;
+  }
+
+  .gallery .image:nth-child(3) {
+    left: 59.8958%;
+    top: 0;
+  }
+
+  .gallery .image:nth-child(4) {
+    left: 79.9479%;
+    top: 0;
+  }
+
+  .gallery .image:nth-child(5) {
+    left: 39.974%;
+    top: 153px;
+  }
+
+  .gallery .image:nth-child(6) {
+    left: 59.8958%;
+    top: 153px;
+  }
+
+  .gallery .image:nth-child(7) {
+    left: 79.9479%;
+    top: 153px;
+  }
+
+  .gallery .image:nth-child(8) {
+    left: 0;
+    top: 307px;
+    height: 307.2px;
+  }
+
+  .gallery .image:nth-child(9) {
+    top: 307px;
+    left: 39.974%;
+  }
+
+  .gallery .image:nth-child(10) {
+    top: 307px;
+    left: 59.8958%;
+  }
+
+  .gallery .image:nth-child(11) {
+    top: 307px;
+    left: 79.9479%;
+  }
+
+  .gallery .image:nth-child(12) {
+    left: 39.974%;
+    top: 460px;
+  }
+
+  .gallery .image:nth-child(13) {
+    left: 59.8958%;
+    top: 460px;
+  }
+
+  .gallery .image:nth-child(14) {
+    left: 79.9479%;
+    top: 460px;
+  }
+
+  .ReactModal__Content {
+    width: 90%;
+  }
+
+  .ReactModal__Content .prev_btn,
+  .ReactModal__Content .next_btn {
+    display: flex;
+  }
+}

@@ -1,0 +1,140 @@
+.drinks_overlay {
+  width: 100%;
+  height: calc(100vh - 159.8px);
+  background-image: url("../../assets/drinks_page_back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(1) opacity(0.2);
+  position: fixed;
+  top: 159.8px;
+  left: 0;
+}
+
+.drinks_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  margin-top: 159.8px;
+  position: relative;
+}
+
+.drinks_wrapper .header {
+  text-align: center;
+}
+
+.drinks_wrapper .header h2 {
+  color: gold;
+  /* color: #0f55e8; */
+  text-transform: uppercase;
+  font-size: 3.8em;
+  font-weight: 600;
+  margin-bottom: 30px !important;
+}
+
+.drinks_wrapper .header button {
+  padding: 5px 40px;
+  background-color: #000;
+  border: 2px solid gold;
+  border-radius: 0;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.drinks_wrapper .box {
+  width: 50%;
+  height: fit-content;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px 30px 30px 30px;
+}
+
+.drinks_wrapper h3 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #000;
+  margin-top: 20px !important;
+  margin-bottom: 10px !important;
+  font-family: "Libre Baskerville", serif !important;
+}
+
+.drinks_wrapper h4 {
+  text-align: center;
+  font-size: 1.1em;
+  color: #000;
+  margin-bottom: 10px !important;
+  font-family: "Libre Baskerville", serif !important;
+}
+
+.drinks_wrapper .menu {
+  border-left: 1px solid gold;
+  padding: 0 10px 10px 10px;
+}
+
+.drinks_wrapper .menu .item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.drinks_wrapper .menu .top {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+.drinks_wrapper .menu .top h5 {
+  color: #000;
+  font-size: 1.3em;
+  font-family: "Libre Baskerville", serif !important;
+}
+
+.drinks_wrapper .menu .top .price {
+  color: gold;
+  font-family: "Libre Baskerville", serif !important;
+  font-size: 1.3em;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+@media screen and (max-width: 767px) {
+  .drinks_wrapper .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .drinks_overlay {
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+  }
+
+  .drinks_wrapper {
+    margin-top: 0px;
+  }
+
+  .drinks_wrapper .header h2 {
+    font-size: 2.6em;
+  }
+
+  .drinks_wrapper .header p {
+    font-size: 1.1em;
+  }
+
+  .drinks_wrapper h3 {
+    font-size: 1.5em;
+  }
+
+  .drinks_wrapper .menu .top h5 {
+    font-size: 1.1em;
+  }
+
+  .drinks_wrapper .menu .top .price {
+    font-size: 1.1em;
+  }
+}

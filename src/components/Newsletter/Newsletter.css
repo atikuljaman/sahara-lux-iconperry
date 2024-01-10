@@ -1,0 +1,129 @@
+.newsletter_wrapper {
+  height: 520px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 2px solid gold;
+}
+
+.newsletter_wrapper .content {
+  height: 520px;
+  background-image: url("../../assets/newsletter_back.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 2px solid gold;
+}
+
+.newsletter_wrapper .content h2 {
+  color: gold;
+  text-transform: uppercase;
+  font-size: 3.8em;
+  font-weight: 700;
+}
+
+.newsletter_wrapper .content p {
+  color: #000;
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.3em;
+}
+
+.newsletter_wrapper .input_box {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.newsletter_wrapper .input_box input {
+  color: #000;
+  border: 0;
+  border-bottom: 1px solid gold;
+  padding: 8px 5px;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+}
+
+.newsletter_wrapper .input_box input::placeholder {
+  color: #000;
+  font-family: "Libre Baskerville", serif;
+}
+
+.newsletter_wrapper .content button {
+  padding: 5px 40px;
+  background-color: #292929;
+  border: 2px solid gold;
+  border-radius: 0;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.newsletter_wrapper .content button:hover {
+  background-color: #000;
+}
+
+.newsletter_wrapper .top-svg-border {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.newsletter_wrapper svg {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+@media screen and (max-width: 900px) {
+  .newsletter_wrapper {
+    height: auto;
+  }
+  .newsletter_wrapper iframe {
+    height: 400px;
+  }
+
+  .newsletter_wrapper .content {
+    height: auto;
+    border-right: 0;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .newsletter_wrapper .content h2 {
+    font-size: 2.6em;
+  }
+
+  .newsletter_wrapper .content p {
+    font-size: 1.2em;
+  }
+
+  .newsletter_wrapper .input_box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+  .newsletter_wrapper .content {
+    padding: 0 50px;
+  }
+
+  .newsletter_wrapper .content h2 {
+    font-size: 2.6em;
+  }
+
+  .newsletter_wrapper .content p {
+    font-size: 1.2em;
+  }
+}

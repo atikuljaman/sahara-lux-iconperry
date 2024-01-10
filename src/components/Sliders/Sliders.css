@@ -1,0 +1,216 @@
+.top_slider {
+  height: 650px;
+  background-color: #000;
+}
+
+.top_slider .box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/slider-1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.top_slider .box_2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/slider-2.webp");
+}
+
+.top_slider .box h2 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 4.6em;
+}
+
+.top_slider .box button {
+  padding: 5px 40px;
+  background-color: #292929;
+  border: 2px solid gold;
+  border-radius: 0;
+  color: gold;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.top_slider .box button:hover {
+  background-color: #000;
+}
+
+.slick-dots .slick-active div {
+  width: 20px !important;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  transform: scale(1);
+  border-radius: 50%;
+}
+
+.slick-dots .slick-active div.dot_2 {
+  width: 20px !important;
+  height: 20px;
+  background: gold !important;
+  transform: scale(1);
+  border-radius: 50%;
+}
+
+.sliders_wrapper .top-svg-border {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.sliders_wrapper .bottom-svg-border {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.sliders_wrapper svg {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.bottom_slider {
+  /* height: 573px; */
+  background-color: #000;
+  background-image: url("../../assets/reviwes_back.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  position: relative;
+}
+
+.bottom_slider .heading {
+  color: gold;
+  text-transform: uppercase;
+  font-size: 3.8em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.bottom_slider .slide-cont {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  margin-top: 20px;
+  height: 300px;
+}
+
+.bottom_slider .content .title {
+  color: #9f9f9f;
+  font-size: 2em;
+  font-family: "Libre Baskerville", serif;
+  margin-bottom: 25px !important;
+}
+
+.bottom_slider .content .subtitle {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.bottom_slider .content .subtitle h4 {
+  font-size: 1.3em;
+  font-family: "Libre Baskerville", serif;
+}
+
+.bottom_slider .content .stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: gold;
+}
+
+.bottom_slider .content p {
+  color: white;
+  width: 80%;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  font-family: "Libre Baskerville", serif;
+  position: relative;
+  margin: 0 auto;
+}
+
+.bottom_slider .content p .quote_1,
+.quote_2 {
+  color: gold;
+  font-size: 45px;
+  position: absolute;
+}
+
+.bottom_slider .content p .quote_1 {
+  top: -20px;
+  left: -45px;
+}
+
+.bottom_slider .content p .quote_2 {
+  right: -50px;
+  bottom: 0px;
+}
+
+/* MEDIA QUERY FOR RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+  .bottom_slider .content p .quote_1,
+  .quote_2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .top_slider .box h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .bottom_slider .heading {
+    font-size: 2.6em;
+  }
+
+  .bottom_slider .slide-cont {
+    height: fit-content;
+    padding-bottom: 100px;
+  }
+
+  .bottom_slider .content .title {
+    font-size: 1.2em;
+  }
+
+  .bottom_slider .content .subtitle h4 {
+    font-size: 1.1em;
+  }
+
+  .bottom_slider .content .stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: gold;
+  }
+
+  .bottom_slider .content p {
+    color: white;
+    width: 80%;
+    font-size: 1.1em;
+  }
+}
